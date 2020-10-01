@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DetailWindowController">
+   <children>
+      <VBox alignment="TOP_RIGHT" layoutX="194.0" layoutY="50.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Label text="Name:" />
+            <Label text="City:" />
+            <Label text="Alert State:" />
+            <Label text="Sismic Count:" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets top="2.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="303.0" layoutY="50.0" prefHeight="200.0" prefWidth="214.0" spacing="22.0" AnchorPane.leftAnchor="360.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <TextField fx:id="damName" />
+            <TextField fx:id="damCity" />
+            <TextField fx:id="damAlertState" />
+            <TextField fx:id="damSisms" />
+         </children>
+      </VBox>
+      <Button fx:id="closeButton" defaultButton="true" layoutX="454.0" layoutY="353.0" mnemonicParsing="false" onAction="#close" prefHeight="25.0" prefWidth="126.0" text="Close" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <TableView fx:id="deviceTable" layoutX="26.0" layoutY="70.0" prefHeight="315.0" prefWidth="245.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="50.0">
+        <columns>
+          <TableColumn fx:id="deviceId" prefWidth="125.0" text="Id" />
+          <TableColumn fx:id="deviceState" prefWidth="119.0" text="State" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
